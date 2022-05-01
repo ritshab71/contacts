@@ -56,7 +56,6 @@ const useStyles = makeStyles({
         fontSize: 10,
         display: 'grid',
         gridTemplateColumns: '50% 50%'
-
     },
     favouriteSelection: {
         width: 15,
