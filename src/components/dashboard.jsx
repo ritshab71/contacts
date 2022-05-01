@@ -58,9 +58,6 @@ const useStyles = makeStyles({
         gridTemplateColumns: '50% 50%'
 
     },
-    filterIcons: {
-        color: '#cfd8dc'
-    },
     favouriteSelection: {
         width: 15,
         height: 15
@@ -183,8 +180,8 @@ function Dashboard() {
                 <div className={classes.filterContacts}>
                     <div>
                         <Stack direction="row" spacing={0.7}>
-                            <Chip className={classes.filterIcons} label="All" size="small" onClick={() => filterContactsByFavourites(false)} variant="filled" color={!isFilterFavourites ? "primary" : "default"}/>
-                            <Chip icon={<FontAwesomeIcon style={{color: '#ffcd38'}} className={classes.favouriteSelection} icon={faStar}/>} className={classes.filterIcons} label="Favourites" size="small" onClick={() => filterContactsByFavourites(true)} variant="filled" color={isFilterFavourites ? "primary" : "default"}/>
+                            <Chip label="All" size="small" onClick={() => filterContactsByFavourites(false)} variant="filled" color={!isFilterFavourites ? "primary" : "default"}/>
+                            <Chip icon={<FontAwesomeIcon style={{color: '#ffcd38'}} icon={faStar}/>} className={classes.filterIcons} label="Favourites" size="small" onClick={() => filterContactsByFavourites(true)} variant="filled" color={isFilterFavourites ? "primary" : "default"}/>
                         </Stack>
                     </div>
                     <div className={classes.numContacts}>{resultantContacts.length} {resultantContacts.length !== 1 ? "contacts" : "contact"}</div>
