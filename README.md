@@ -1,5 +1,7 @@
 # Contacts Application
 
+https://ritshab71.github.io/contacts/
+
 # Description:
 Basic Contacts App that lists all contacts (data from dummy API) and provides extra information on the contact upon click.
 
